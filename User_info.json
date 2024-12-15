@@ -1,0 +1,49 @@
+[
+  {
+    "name": "payal",
+    "password": "2002",
+    "notes": [
+      {
+        "index": 1,
+        "title": "girls",
+        "content": "hello"
+      }
+    ]
+  },
+  {
+    "name": "subhi",
+    "password": "001",
+    "notes": [
+      {
+        "index": 1,
+        "title": "year",
+        "content": "2024"
+      },
+      {
+        "index": 2,
+        "title": "date 16",
+        "content": "monday"
+      },
+      {
+        "index": 3,
+        "title": "giit",
+        "content": "git hub work "
+      },
+      {
+        "index": 4,
+        "title": "hii",
+        "content": "hello"
+      },
+      {
+        "index": 5,
+        "title": "myy",
+        "content": "girl"
+      }
+    ]
+  },
+  {
+    "name": "shivam",
+    "password": "2000",
+    "notes": []
+  }
+]

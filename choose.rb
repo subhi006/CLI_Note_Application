@@ -31,6 +31,7 @@ module Choose
                   @username=user_name['name']
                   note = Note::CreateNote.new(@title,@content,@username)
                   note.create_note
+                  puts "Note created successfully"
                 #Note view section
                 when 2                 
                    @user= user_name
@@ -46,6 +47,7 @@ module Choose
                     @content=gets.chomp
                     note = Update::UpdateNote.new(@id,@title,@content,user_name)
                     note.update_note
+                    puts "Note updated successfully"
                 #delet section
                 when 4                    
                    print "Enter note ID to delete : "

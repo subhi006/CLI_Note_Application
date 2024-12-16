@@ -7,6 +7,8 @@ class Start
     def menu
         while(true)
             puts "
+                 || CLI Note Application ||
+                 
             Please choose an option:
             1. Register
             2. Login
@@ -31,7 +33,10 @@ class Start
             when 3 
               puts "Goodbye!"
               return
+            else
+                puts "Invalid option. Please choose again."
             end
+            puts "Enter any key!"
             gets 
         end
     end

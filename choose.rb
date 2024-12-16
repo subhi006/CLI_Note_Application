@@ -12,6 +12,7 @@ module Choose
         def choose_list(user_name)
            while (true)
                puts "
+                    || #{user_name['name'].upcase} ||
                Please choose an option:
                1.Create Notes
                2.View Notes
@@ -52,8 +53,8 @@ module Choose
                 when 4                    
                    print "Enter note ID to delete : "
                    idToDelete = gets()
-                   Delete::DeleteNote.new(idToDelete,user_name)
-                   puts "Note Deleted successfully!"
+                   note = Delete::DeleteNote.new(idToDelete,user_name)
+                   note.dNote
                 #PDF section
                 when 5
                    print "Enter note ID to export : "
@@ -62,10 +63,13 @@ module Choose
                    obj.toPDf
                    puts "NOte Exported to PDF successfully! The PDF has beed saved in your Downloads folder." 
                 #exit section
-                 when 6
+                when 6
                    puts "Goodbye!"
                    return
+                else
+                    puts "Invalid option. Please choose again."
                 end
+                puts "Enter any key!"
                 gets 
             end
         end
